@@ -2,7 +2,7 @@ import React from 'react'
 import {InfoSection} from '../../components'
 import { homeObjTwo  } from './Data'
 
-const Home = () => {
+const Products = () => {
     return (
         <>
             
@@ -12,4 +12,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Products

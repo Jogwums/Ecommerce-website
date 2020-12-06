@@ -4,7 +4,8 @@ import GlobalStyle from './globalStyles'
 
 import Home from './pages/HomePage/Home'
 import Services from './pages/Services/Services'
-import Products from './pages/Products/Products'
+// import Products from './pages/Products/Products'
+import Items from './pages/Items/Items'
 import SignUp from './pages/SignUp/SignUp'
 
 import {Navbar, Footer} from './components/index';
@@ -24,7 +25,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route  path="/services" component={Services} />
-          <Route  path="/product" component={Products} />
+          <Route  exact path="/product" component={Items} />
           <Route  path="/sign-up" component={SignUp} />
         </Switch>
         <Footer />

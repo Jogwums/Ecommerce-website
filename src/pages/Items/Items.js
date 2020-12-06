@@ -1,20 +1,17 @@
 import React from 'react'
 import {InfoSection, StoreFront} from '../../components'
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data'
+import { homeObjOne, homeObjTwo, homeObjThree } from './Data'
 
-const Home = () => {
+const Items = () => {
     return (
         <>
-            <StoreFront {...homeObjOne } />
-
-
-            
+            <StoreFront  />
             <InfoSection {...homeObjOne} />
             <InfoSection {...homeObjTwo} />
             <InfoSection {...homeObjThree} />
-            <InfoSection {...homeObjFour} />
+            
         </>
     )
 }
 
-export default Home
+export default Items

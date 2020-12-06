@@ -2,7 +2,7 @@ import imgSvg from '../../images/svg-1.svg'
 import imgSvg2 from '../../images/svg-2.svg'
 import imgSvg3 from '../../images/svg-3.svg'
 import imgSvg4 from '../../images/svg-4.svg'
-import imgProfile from '../../images/profile-1.jpg'
+// import imgProfile from '../../images/profile-1.jpg'
 
 export const homeObjOne = {
     lightBg: false,

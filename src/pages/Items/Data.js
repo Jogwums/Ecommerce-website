@@ -1,8 +1,7 @@
-import imgSvg from '../../images/svg-1.svg'
 import imgSvg2 from '../../images/svg-2.svg'
-import imgSvg3 from '../../images/svg-3.svg'
+import imgSvg3 from '../../images/svg-5.svg'
 import imgSvg4 from '../../images/svg-4.svg'
-// import imgProfile from '../../images/profile-1.jpg'
+
 
 export const storeObjOne = {
     lightBg: false,
@@ -46,7 +45,7 @@ export const homeObjTwo = {
     headline: 'Lead Market Specialist',
     lightText: false,
     topline: 'Marketing Agency',
-    img: imgSvg,
+    img: imgSvg2,
     alt: 'Image',
     start: 'true',
 };
@@ -62,24 +61,9 @@ export const homeObjThree = {
     headline: 'IT Specialist',
     lightText: true,
     topline: 'Marketing Agency',
-    img: imgSvg2,
+    img: imgSvg3,
     alt: 'Image',
     start: '',
 }
 
-export const homeObjFour = {
-    lightBg: true,
-    primary: false,
-    imgStart: 'start',
-    lightTopLine: false,
-    lightTextDesc: false,
-    buttonLabel: 'Get Started',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi distinctio, saepe vero nam repellat odit.',
-    headline: 'Software Specialist',
-    lightText: false,
-    topline: 'Marketing Agency',
-    img: imgSvg3,
-    alt: 'Image',
-    start: 'true',
-}
 
