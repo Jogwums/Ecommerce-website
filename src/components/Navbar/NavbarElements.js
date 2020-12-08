@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Container } from '../../globalStyles';
 import { Link } from 'react-router-dom';
-import { FaPlaneDeparture } from "react-icons/fa";
+import { FaShopify } from "react-icons/fa";
 
 export const Nav = styled.nav`
 background: #405679;
@@ -28,7 +28,7 @@ ${Container}
 `;
 
 export const NavLogo = styled(Link)`
-    color: palegoldenrod;
+    color: palevioletred;
     justify-self: flex-start;
     cursor: pointer;
     text-decoration: none;
@@ -38,8 +38,9 @@ export const NavLogo = styled(Link)`
 
 `;
 
-export const NavIcon = styled(FaPlaneDeparture)`
+export const NavIcon = styled(FaShopify)`
     margin-right: .5rem;
+
 `;
 
 export const MobileIcon = styled.div`
@@ -75,6 +76,7 @@ export const NavMenu = styled.ul`
         opacity: 1;
         transition: all 0.8s ease;
         background: #405679;
+        
     }
 `;
 

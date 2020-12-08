@@ -1,5 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import { Provider } from 'react-redux'
+
+import { store } from './store/GlobalStore'
+
 import GlobalStyle from './globalStyles'
 
 import Home from './pages/HomePage/Home'
@@ -9,7 +14,7 @@ import Items from './pages/Items/Items'
 import SignUp from './pages/SignUp/SignUp'
 
 import {Navbar, Footer} from './components/index';
-import ScrollToTop from './components/ScrollToTop'
+import ScrollToTop from './components/ScrollToTop';
 
 
 import './App.css';
@@ -18,6 +23,7 @@ import './App.css';
 function App() {
   return (
     <>
+    <Provider store={store}>
       <Router>
         <GlobalStyle />
         <ScrollToTop />
@@ -30,7 +36,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-      
+      </Provider>
     </>
   );
 }

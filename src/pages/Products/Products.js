@@ -1,11 +1,11 @@
 import React from 'react'
-import {InfoSection} from '../../components'
+import {InfoSection, StoreFront} from '../../components'
 import { homeObjTwo  } from './Data'
 
 const Products = () => {
     return (
         <>
-            
+            <StoreFront {...homeObjTwo}  />
             <InfoSection {...homeObjTwo} />
             
         </>

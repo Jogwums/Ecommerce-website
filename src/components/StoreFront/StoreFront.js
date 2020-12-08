@@ -1,5 +1,7 @@
 import React from 'react'
-import { StoreFrontContainer,ItemHeader, ItemSlider, ItemCard, ItemImage } from './StoreFront.elements'
+import { StoreFrontContainer,ItemHeader, ItemSlider, ItemCard, ItemImage } from './StoreFront.elements';
+import Slider from '../Slider/Slider';
+
 
 const StoreFront = ({ img, alt }) => {
     return (
@@ -10,20 +12,8 @@ const StoreFront = ({ img, alt }) => {
                     <p>Holiday season is here!</p>
                 </ItemHeader>
                 <ItemSlider>
-                    <ItemCard>
-                        <ItemImage src={img} alt={alt} />
-                        
-                    </ItemCard>
-                    <ItemCard>
-                        <ItemImage src={img} alt={alt} />
-                        
-                    </ItemCard>
-                    <ItemCard>
-                        <ItemImage src={img} alt={alt} />
-                        
-                    </ItemCard>
+                    <Slider />
                 </ItemSlider>
-                
         </StoreFrontContainer> 
         </>
     )

@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import {FaFacebook, FaGithub, FaTwitter, FaLinkedin} from 'react-icons/fa';
+import {Button} from '../../globalStyles';
 import {FooterContainer, FooterSubscription, 
         FooterSubHeading, FooterSubText, Form, FormInput, 
          FooterLinksContainer, FooterLinksWrapper, FooterLinksItems,
          FooterLink, FooterLinkTitle, SocialMedia, SocialMediaWrapper,
-         SocialLogo,SocialIcon, SocialIcons, SocialIconLink, WebsiteRights  } from './Footer.elements'
-        import {Button} from '../../globalStyles'
-import {FaFacebook, FaGithub, FaTwitter, FaLinkedin} from 'react-icons/fa'
+         SocialLogo,SocialIcon, SocialIcons, SocialIconLink, WebsiteRights  } from './Footer.elements';
+        
+
 
 const Footer = () => {
     return (

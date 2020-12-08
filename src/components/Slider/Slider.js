@@ -1,13 +1,16 @@
-import React, {useState} from 'react'
-import styled from 'styled-components'
+import React, {useState} from 'react';
 import Carousel from 'styled-components-carousel';
+import { DIV } from'./Slider.elements';
+
+import {Slides} from '../index'
 
 
-export const Example = () => (
+const Slider = () => (
     <Carousel
         slidesToShow={3}
         center
         centerPadding={30}
+        infinite
         breakpoints={[
             {
                 size: 200,
@@ -21,10 +24,11 @@ export const Example = () => (
             {
                 size: 600,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     showArrows: false,
                     showIndicator: true,
                     swipeable: true,
+                    infinite: true,
                 },
             },
             {
@@ -35,24 +39,17 @@ export const Example = () => (
                     showIndicator: true,
                     center: true,
                     swipeable: true,
+                    infinite: true,
                 },
             },
         ]}
     >
         <DIV>
-            <span>1</span>
+            <Slides />
         </DIV>
-        <DIV>
-            <span>2</span>
-        </DIV>
-        <DIV>
-            <span>3</span>
-        </DIV>
+        
+        
     </Carousel>
 );
 
-const DIV = styled.div`
-    display: flex; flex-direction: column; background: lightblue; padding: 2rem;
-    height: 200px;
-`;
-
+export default Slider;
